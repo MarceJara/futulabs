@@ -1,0 +1,9 @@
+Referencias usadas para resolver problemas:
+
+Problema: no autentificaba el correo del que enviaba las
+ordenes de confirmación.
+Solución: crear una contraseña especial para usarla en la apliación
+Fuente: https://stackoverflow.com/questions/60701936/error-invalid-login-application-specific-password-required
+
+Configuración de API de google clud platform para usar BD google sheets:
+https://help.brightdata.com/hc/en-us/articles/6254819504145-How-to-find-your-Google-Cloud-Private-Key
