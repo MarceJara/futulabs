@@ -7,3 +7,8 @@ Fuente: https://stackoverflow.com/questions/60701936/error-invalid-login-applica
 
 Configuración de API de google clud platform para usar BD google sheets:
 https://help.brightdata.com/hc/en-us/articles/6254819504145-How-to-find-your-Google-Cloud-Private-Key
+
+Estilos en componentes: https://mui.com/system/getting-started/the-sx-prop/
+
+Ejemplo de landign page y navbar: https://github.com/app-generator/sample-react-mui-introduction
+
