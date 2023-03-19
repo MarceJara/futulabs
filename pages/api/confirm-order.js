@@ -46,15 +46,19 @@ export default async function handler(req, res) {
     },
     valueInputOption: "RAW",
   });
-  // send PN in slack
-  await axios.post(process.env.SLACK_CHANNEL_WEBHOOK, {
-    text: `Placed @: ${createdAt}
-          Full name: ${fullName}
-          Email: ${email}
-          Contact: ${contact}
-          Address: ${address}
-          Cart: ${cart}
-          Total Amount: ${totalAmt}`,
+
+  // Send order to Telegram Group
+  await axios.post(process.env.TELEGRAM_API, {
+    chat_id: process.env.TELEGRAM_CHAT_ID,
+    text: `
+    Placed time: ${createdAt}
+    Nombre: ${fullName}
+    Email: ${email}
+    Telefono: ${contact}
+    Dirección: ${address}
+    <====================>
+    PEDIDO: ${cart}
+    Total: ${totalAmt}`,
   });
 
   await sendEmail({
