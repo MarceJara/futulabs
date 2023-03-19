@@ -72,7 +72,7 @@ export default async function newOrder(req, res) {
         contact,
         address,
         cart: formattedCart,
-        totalAmt: `$${totalAmt.toFixed(2)}`,
+        totalAmt: `S/ ${totalAmt.toFixed(2)}`,
         createdAt: formattedTs,
       },
       uuidv4(),
