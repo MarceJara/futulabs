@@ -94,12 +94,12 @@ const Homepage = ({ books }) => {
                 onClose={() => setOrderPlaced(false)}
                 message="Order placed! A confirmation mail has been sent to you. The link is valid for the next 5 mins"
             />
-            {/* <TopBar
-        openPanel={() => setShowPanel(true)}
-        activeGenre={activeGenre}
-        changeGenre={setActiveGenre}
-        genres={genres}
-      /> */}
+            <TopBar
+                openPanel={() => setShowPanel(true)}
+                activeGenre={activeGenre}
+                changeGenre={setActiveGenre}
+                genres={genres}
+            />
             <Books
                 books={books}
                 cart={cart}
